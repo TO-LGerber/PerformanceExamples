@@ -1,3 +1,13 @@
-obj/*
-bin/*
+CancellationTokens/obj/*
+CancellationTokens/bin/*
+
+Dynamic/obj/*
+Dynamic/bin/*
+
+Spans/obj/*
+Spans/bin/*
+
+Enums/obj/*
+Enums/bin/*
+
 .vs/*
