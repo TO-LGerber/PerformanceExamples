@@ -1,1 +1,3 @@
-﻿Console.WriteLine("");
+﻿using BenchmarkDotNet.Running;
+
+BenchmarkRunner.Run<SpanBenchmarks>();

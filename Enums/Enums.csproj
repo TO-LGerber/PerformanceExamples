@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.13.3" />
+    <PackageReference Include="FastEnum" Version="1.8.0" />
+    <PackageReference Include="NetEscapades.EnumGenerators" Version="1.0.0-beta06" />
+  </ItemGroup>
+
 </Project>

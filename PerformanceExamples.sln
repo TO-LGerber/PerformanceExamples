@@ -3,18 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums", "Enums\Enums.csproj", "{C5519474-BD15-40CC-9811-598F5E131708}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enums", "Enums\Enums.csproj", "{C5519474-BD15-40CC-9811-598F5E131708}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spans", "Spans\Spans.csproj", "{CBF53653-5C0F-4141-B741-6CCF6F680332}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spans", "Spans\Spans.csproj", "{CBF53653-5C0F-4141-B741-6CCF6F680332}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CancellationTokens", "CancellationTokens\CancellationTokens.csproj", "{51B8706F-0AB2-4E21-8E49-E368A03CC470}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamic", "Dynamic\Dynamic.csproj", "{C4D9966A-4CF5-4D25-9C63-68BF600350B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CancellationTokens", "CancellationTokens\CancellationTokens.csproj", "{51B8706F-0AB2-4E21-8E49-E368A03CC470}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{180013A3-F07A-4A1F-9181-3A930D6B280B}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dynamic", "Dynamic\Dynamic.csproj", "{4747A248-07B5-488C-954A-5799EF4208F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,10 +34,10 @@ Global
 		{51B8706F-0AB2-4E21-8E49-E368A03CC470}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51B8706F-0AB2-4E21-8E49-E368A03CC470}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51B8706F-0AB2-4E21-8E49-E368A03CC470}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C4D9966A-4CF5-4D25-9C63-68BF600350B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4D9966A-4CF5-4D25-9C63-68BF600350B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4D9966A-4CF5-4D25-9C63-68BF600350B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4D9966A-4CF5-4D25-9C63-68BF600350B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4747A248-07B5-488C-954A-5799EF4208F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4747A248-07B5-488C-954A-5799EF4208F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4747A248-07B5-488C-954A-5799EF4208F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4747A248-07B5-488C-954A-5799EF4208F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

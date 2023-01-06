@@ -1,6 +1,4 @@
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+﻿using BenchmarkDotNet.Running;
+using Benchmarks;
 
-app.MapGet("/", () => "Hello World!");
-
-app.Run();
+BenchmarkRunner.Run<DynamicBenchmarks>();

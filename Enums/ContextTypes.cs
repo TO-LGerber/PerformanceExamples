@@ -1,4 +1,7 @@
-﻿public enum ContextTypes
+﻿using NetEscapades.EnumGenerators;
+
+[EnumExtensions]
+public enum ContextTypes
 {
     Unknown = -1,
     Booking = 1,
