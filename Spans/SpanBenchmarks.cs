@@ -3,43 +3,24 @@
 [MemoryDiagnoser(false)]
 public class SpanBenchmarks
 {
-    const string input = "AXTqyFYy0t6VtY9";
-    readonly List<char[]> _encryptionMarkers = new List<char[]>()
-    {
-        new char[] { 'j', 'H', '4' },
-        new char[] { 'p', 'B', '8' },
-        new char[] { 'b', 'S', '3' }
-    };
+    private static readonly string _dateString = "01 05 1991";
 
     [Benchmark]
-    public string String_Substring()
+    public DateTime With_String()
     {
-        var marker = _encryptionMarkers[input.Length % 3];
-        return string.Concat
-        (
-            input.Substring(0, 1),
-            marker[0],
-            input.Substring(1, 3),
-            marker[1],
-            input.Substring(4),
-            marker[2]
-        );
+        var day = _dateString.Substring(0, 2);
+        var month = _dateString.Substring(3, 2);
+        var year = _dateString.Substring(6);
+        return new DateTime(int.Parse(year), int.Parse(month), int.Parse(day));
     }
 
     [Benchmark]
-    public string Span_Slice()
+    public DateTime With_Span()
     {
-        var marker = _encryptionMarkers[input.Length % 3];
-        var readonlySpan = (ReadOnlySpan<char>)input;
-
-        return string.Concat
-        (
-            readonlySpan.Slice(0, 1).ToString(),
-            marker[0],
-            readonlySpan.Slice(1, 3).ToString(),
-            marker[1],
-            readonlySpan.Slice(4).ToString(),
-            marker[2]
-        );
+        ReadOnlySpan<char> dateSpan = _dateString;
+        var day = dateSpan.Slice(0, 2);
+        var month = dateSpan.Slice(3, 2);
+        var year = dateSpan.Slice(6);
+        return new DateTime(int.Parse(year), int.Parse(month), int.Parse(day));
     }
 }
