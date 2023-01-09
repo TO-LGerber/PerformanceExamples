@@ -10,4 +10,7 @@ Spans/bin/*
 Enums/obj/*
 Enums/bin/*
 
+Stringbuilder/obj/*
+Stringbuilder/bin/*
+
 .vs/*
